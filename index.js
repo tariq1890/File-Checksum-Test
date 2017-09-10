@@ -7,7 +7,7 @@ checksum.file('brokenage-hero.png', function (err, sum) {
 });
 
 fs.readFile('brokenage-hero.png', function (err, data) {
-    console.log("Genereated checksum 2 : ", calcChecksum2('destiny_2.jpg'))
+    console.log("Genereated checksum 2 : ", calcChecksum2(data))
 });
 
 calcChecksum3('brokenage-hero.png');
