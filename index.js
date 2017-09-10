@@ -2,7 +2,11 @@ const checksum = require('checksum');
 const fs = require('fs');
 const crypto = require('crypto');
 
-checksum.file('brokenage-hero.png', function (err, sum) {
+options = {
+    algorithm: 'sha256'
+};
+
+checksum.file('brokenage-hero.png', options, function (err, sum) {
     console.log("Generated checksum from checksum library:", sum);
 });
 
@@ -14,7 +18,7 @@ calcChecksum3('brokenage-hero.png');
 
 function calcChecksum2 (str, algorithm, encoding) {
     return crypto
-        .createHash(algorithm || 'md5')
+        .createHash(algorithm || 'sha256')
         .update(str, 'utf8')
         .digest(encoding || 'hex')
 }
@@ -22,9 +26,9 @@ function calcChecksum2 (str, algorithm, encoding) {
 function calcChecksum3(path) {
     const filestream = fs.createReadStream(path);
     const hash = crypto.createHash('sha256');
-    filestream.setEncoding('utf8');
+    //filestream.setEncoding('utf8');
     filestream.on('data', function(data){
-           hash.update(data, 'utf8')
+           hash.update(data)
     });
     filestream.on('end', function () {
         console.log("Checksum from method 3 : ", hash.digest('hex'))
