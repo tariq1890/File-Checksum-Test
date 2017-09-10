@@ -2,15 +2,15 @@ const checksum = require('checksum');
 const fs = require('fs');
 const crypto = require('crypto');
 
-checksum.file('destiny_2.jpg', function (err, sum) {
+checksum.file('brokenage-hero.png', function (err, sum) {
     console.log("Generated checksum from checksum library:", sum);
 });
 
-fs.readFile('destiny_2.jpg', function (err, data) {
+fs.readFile('brokenage-hero.png', function (err, data) {
     console.log("Genereated checksum 2 : ", calcChecksum2('destiny_2.jpg'))
 });
 
-calcChecksum3('destiny_2.jpg');
+calcChecksum3('brokenage-hero.png');
 
 function calcChecksum2 (str, algorithm, encoding) {
     return crypto
