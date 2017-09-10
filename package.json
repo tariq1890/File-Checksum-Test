@@ -1,0 +1,28 @@
+{
+  "name": "file-checksum-test",
+  "version": "0.0.1",
+  "description": "A sample Node.js app to test various checksum methods",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "checksum": "^0.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tariq1890/checksum-js-sample"
+  },
+  "keywords": [
+    "node",
+    "file",
+    "checksum",
+    "crypto"
+  ],
+  "author": "Tariq Ibrahim",
+  "contributors": [
+    "Tariq Ibrahim <tariq1890@yahoo.in>"
+  ],
+  "license": "MIT"
+}
