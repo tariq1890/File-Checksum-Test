@@ -36,6 +36,6 @@ function calcChecksum3(path) {
 }
 
 //Results
-//Genereated checksum 2 :  f66318024c525e2f4719af8d3c4f4738
-//Checksum from method 3 :  8acbe571868f119520f00eb32631d098f55f5a0ddac1f62f11f592e0df78c10b
-//Generated checksum from checksum library: 8c2075377026ba3aec5bc5b573908b54a01e5800
+//Generated checksum 2 :  909a88f7db95987bdd10905ab48602b158b67ce6f2edbf78fe9631f39fb2dfa5
+//Generated checksum from checksum library: 909a88f7db95987bdd10905ab48602b158b67ce6f2edbf78fe9631f39fb2dfa5
+//Checksum from method 3 :  909a88f7db95987bdd10905ab48602b158b67ce6f2edbf78fe9631f39fb2dfa5
